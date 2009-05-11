@@ -1,0 +1,377 @@
+<%= content_for :title,'Projects' %>
+<%= render :partial =>'breadcrumbs', :locals => {:name => 'all'} %>
+	<div style="border-top: 1px solid #FFF;">
+		<div class="pTabOn">
+			<a href="">Active</a>
+		</div>
+		<div class="pTab">
+			<a href="">Inactive</a>
+		</div>
+		<p class="cf"></p>
+		<div class="pTabFoot"></div>
+		<table id="box-table-a">
+			<thead>
+				<tr>
+					<th width="4%" scope="col"></th>
+					<th width="39%" scope="col">
+						<div class="">
+							Project Name
+						</div>
+					</th>
+					<th width="12%" scope="col">
+						<div class="">
+							&nbsp;&nbsp;Comment<br />
+							(today/total)
+						</div>
+					</th>
+					<th width="14%" scope="col">
+						<div class="">
+							<div class="">
+								Leader
+							</div>
+						</div>
+					</th>
+					<th width="15%" scope="col">
+						<div class="">
+							<div class="">
+								Progress
+							</div>
+						</div>
+					</th>
+					<th width="16%" scope="col">
+						<div class="down-arrow">
+							<div class="">
+								last update time
+							</div>
+						</div>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="bg-1">
+					<td class="listcount">
+						1.
+					</td>
+					<td>
+						<strong><%= link_to  'csstheme',:action => 'show'%> </strong><br />
+						<span>(http://www.freecsstemplates.org/)</span>
+					</td>
+					<td>
+						<div class="notr">
+							8/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							32.25%
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-2">
+					<td class="listcount">
+						2.
+					</td>
+					<td>
+						<strong><a href="detail/template-monster">template-monster</a></strong><br />
+						<span>(http://www.templatemonster.com)</span>
+					</td>
+					<td>
+						<div class="notr">
+							7/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="notr">
+							42.67%<br />
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-1">
+					<td class="listcount">
+						3.
+					</td>
+					<td>
+						<strong><a href="detail/yourdictionary">yourdictionary</a></strong><br />
+						<span>(http://www.yourdictionary.com/)</span>
+					</td>
+					<td>
+						<div class="notr">
+							8/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							51.41%
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-2">
+					<td class="listcount">
+						4.
+					</td>
+					<td>
+						<strong><a href="detail/travelcan">travelcan</a></strong><br />
+						<span>(http://www.independent.co.uk/)</span>
+					</td>
+					<td>
+						<div class="negative">
+							0/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							83.5%
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-1">
+					<td class="listcount">
+						5.
+					</td>
+					<td>
+						<strong><a href="detail/tuaw">tuaw</a></strong><br />
+						<span>(http://www.tuaw.com/)</span>
+					</td>
+					<td>
+						<div class="notr">
+							8/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							59.08%
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-2">
+					<td class="listcount">
+						6.
+					</td>
+					<td>
+						<strong><a href="detail/flashden">flashden</a></strong><br />
+						<span>(http://www.flashden.net)</span>
+					</td>
+					<td>
+						<div class="notr">
+							6/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							44.84%
+						</div>
+					</td>
+					<td>
+						<div class="notr">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-1">
+					<td class="listcount">
+						7.
+					</td>
+					<td>
+						<strong><a href="detail/open-directory">open-directory</a></strong><br />
+						<span>(http://www.dmoz.org)</span>
+					</td>
+					<td>
+						<div class="notr">
+							8/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							71.66%
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-2">
+					<td class="listcount">
+						8.
+					</td>
+					<td>
+						<strong><a href="detail/stock-markets">stock-markets</a></strong><br />
+						<span>(http://www.nyse.com/)</span>
+					</td>
+					<td>
+						<div class="notr">
+							8/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							45.33%
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-1">
+					<td class="listcount">
+						9.
+					</td>
+					<td>
+						<strong><a href="detail/123people">123people</a></strong><br />
+						<span>(http://www.123people.com/)</span>
+					</td>
+					<td>
+						<div class="negative">
+							0/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							61.92%
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-2">
+					<td class="listcount">
+						10.
+					</td>
+					<td>
+						<strong><a href="detail/creation-tools">creation-tools</a></strong><br />
+						<span>(http://bytes.com/groups/css/436211-css-theme-creation-tools)</span>
+					</td>
+					<td>
+						<div class="notr">
+							0/10
+						</div>
+					</td>
+					<td>
+						<div class="negative">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							9%
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+				<tr class="bg-1">
+					<td class="listcount">
+						11.
+					</td>
+					<td>
+						<strong><a href="detail/steve-pavlina">steve-pavlina</a></strong><br />
+						<span>(http://www.stevepavlina.com/blog/)</span>
+					</td>
+					<td>
+						<div class="notr">
+							3/10
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							allen
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							52.17%
+						</div>
+					</td>
+					<td>
+						<div class="positive">
+							2009.5.9
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="paging clearfix">
+			<strong>1</strong> <a href="http://www.hyperpot.com/list/top/2">2</a> <a href="http://www.hyperpot.com/list/top/3">3</a> <a href="http://www.hyperpot.com/list/top/4">4</a> <a href="http://www.hyperpot.com/list/top/2">&gt;</a> <a href="http://www.hyperpot.com/list/top/4">&gt;&gt;</a>
+		</p>
+		<div class="cfix"></div>
+	</div>
+</div>

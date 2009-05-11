@@ -1,0 +1,7 @@
+<% content_for :title,'index'%>
+<%= render :partial =>'main' %>
+<%= render :partial =>'middle' %>
+<%= render :partial =>'top5' %>
+<% content_for  :tagCloud do %>
+	<%= render :partial =>'tagCloud' %>
+<% end %>

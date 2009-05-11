@@ -1,0 +1,60 @@
+<% form_for(@project) do |f| %>
+	<%= f.error_messages %>
+	<div class="form">
+		<div class="formContLeft">
+			<div class="formBox">
+				<div class="formBoxInner">
+					<div class="div">
+						<h3>
+							<%= f.label :name,'Project Name'%>
+						</h3>
+						<%= f.text_field :name, :class =>'sml' %>
+					</div>
+					<div class="div">
+						<h3>
+							<%= f.label :tags,'Project Tags'%>
+						</h3>
+						<%= f.text_field :tags, :class =>'sml'  %>
+					</div>
+					<p class="cf"></p>
+					<br>
+					<h3>
+						<%= f.label :description,'Project Description'%>
+					</h3>
+					<%= f.text_area :description, :class =>'sml', :rows => 14  %>
+					<br>
+					<br>
+					<div class="div">
+						<h3>
+							Password
+						</h3><input type="password" id="password" name="password" class="sml" tabindex="40" maxlength="30">
+					</div>
+					<div class="div">
+						<h3>
+							Confirm Password
+						</h3><input type="password" id="cnfpassword" name="cnfpassword" class="sml" tabindex="50" maxlength="30">
+					</div>
+					<p class="cf"></p><br>
+					<br>
+					<input id="termsc" name="termsc" class="HeadCheck" type="checkbox" value="1" checked="checked"> <label for="termsc" class="subHead">Please indicate that you agree to our <a href="http://www.hyperpot.com/term-of-use"><b>Terms &amp; Conditions</b></a>.</label><br>
+					<br>
+					<br>
+					<input type="submit" name="Submit" value="" class="signup-button" style="width:82px; height:25px;">
+				</div>
+			</div>
+		</div>
+		<div class="formContRight" style="width:250px;">
+			<div class="formBox">
+				<div class="formBoxInner">
+					<h3>
+						What will I signup for?
+					</h3>You will signup for the small subscription plan, which is $1 for per letter. You can buy credits on the system at anytime. All the services are available for a one-time fee.
+					<h3>
+						What's the requirements?
+					</h3>Hyperpot is a platform independent web application. It requires a modern web browser such as Firefox 2, Safari 3, Google Chrome, Opera 9, Internet Explorer 7 or newer. You will also need to have JavaScript enabled.
+				</div>
+			</div>
+		</div>
+		<p class="cf"></p>
+	</div>
+<% end  %>
