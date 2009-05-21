@@ -1,16 +1,60 @@
-<%= error_messages_for :user %>
+
 <% form_for :user, :url => users_path do |f| -%>
-<p><label for="login">Login</label><br/>
-<%= f.text_field :login %></p>
-
-<p><label for="email">Email</label><br/>
-<%= f.text_field :email %></p>
-
-<p><label for="password">Password</label><br/>
-<%= f.password_field :password %></p>
-
-<p><label for="password_confirmation">Confirm Password</label><br/>
-<%= f.password_field :password_confirmation %></p>
-
-<p><%= submit_tag 'Sign up' %></p>
-<% end -%>
+	<div class="form" id="new_form">
+		<%= error_messages_for :user %>
+		<div class="formContLeft">
+			<div class="formBox">
+				<div class="formBoxInner">
+					<div class="div">
+						<h3>
+							<%= f.label :login,'Login Name'%>
+						</h3>
+						<%= f.text_field :login, :class =>'sml' %>
+					</div>
+					<p class="cf"></p>
+					<div class="div">
+						<h3>
+							<%= f.label :email,'Email'%>
+						</h3>
+						<%= f.text_field :email, :class =>'sml'  %>
+					</div>
+					<p class="cf"></p>
+						<div class="div">
+							<h3>
+								<%= f.label :password,'Password'%>
+							</h3>
+							<%= f.password_field :password, :class =>'sml' %>
+						</div>
+						<p class="cf"></p>
+							<div class="div">
+								<h3>
+									<%= f.label :password_confirmation,'Confirm'%>
+								</h3>
+								<%= f.password_field :password_confirmation, :class =>'sml' %>
+							</div>
+					<br>
+				
+					<p class="cf"></p><br>
+					<br>
+					<input id="termsc" name="termsc" class="HeadCheck" type="checkbox" value="1" checked="checked"> <label for="termsc" class="subHead">Please indicate that you agree to our <a href="#"><b>Terms &amp; Conditions</b></a>.</label><br>
+					<br>
+					<br>
+					<%= submit_tag 'Sign up',:class => "signup-button",:value => ""%>
+				</div>
+			</div>
+		</div>
+		<div class="formContRight" style="width:250px;">
+			<div class="formBox">
+				<div class="formBoxInner">
+					<h3>
+						What will I signup for?:
+					</h3>You will signup for the small subscription plan, which is $1 for per letter. You can buy credits on the system at anytime. All the services are available for a one-time fee.
+					<h3>
+						What's the requirements?
+					</h3>Hyperpot is a platform independent web application. It requires a modern web browser such as Firefox 2, Safari 3, Google Chrome, Opera 9, Internet Explorer 7 or newer. You will also need to have JavaScript enabled.
+				</div>
+			</div>
+		</div>
+		<p class="cf"></p>
+	</div>
+<% end  %>

@@ -336,6 +336,19 @@ border: 1px solid #D0D9E0;
 width: 445px;
 padding: 4px;
 }
+.fieldWithErrors input {
+	border:1px solid red!important;
+}
+
+.errorExplanation p {
+	font-size:13px;
+	margin:5px;
+}
+.errorExplanation ul {
+	margin-left:20px;
+	color:red;
+	font-size:13px;
+}
 .form .formBoxInner .sml {
 width: 212px;
 }
@@ -827,7 +840,7 @@ height: 245px;
 width: 930px;
 }
 .home-mid {
-height:385px;
+height:406px;
 }
 .hnumber {
 float: left;
@@ -1102,7 +1115,9 @@ background: url(../image/arti.png) no-repeat left;
 .faq a .l_eksi {
 background: url(../image/eksi.png) no-repeat left;
 }
-.signup-button {
+#new_form .signup-button {
+width: 82px;
+height: 25px;	
 background: url(../image/button/signup.png) no-repeat;
 cursor: pointer;
 border: 0;
